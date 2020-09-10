@@ -1135,6 +1135,7 @@ OC.Notification = {
 	 * @param {string} html Message to display
 	 * @param {Object} [options] options
 	 * @param {string] [options.type] notification type
+	 * @param {string] [options.hideCloseButton] hide close button
 	 * @param {int} [options.timeout=0] timeout value, defaults to 0 (permanent)
 	 * @return {jQuery} jQuery element for notification row
 	 */
@@ -1153,7 +1154,7 @@ OC.Notification = {
 		if (options.type) {
 			$row.addClass('type-' + options.type);
 		}
-		if (options.type === 'error') {
+		if (options.hideCloseButton !== true) {
 			// add a close button
 			var $closeButton = $('<a class="action close icon-close" href="#"></a>');
 			$closeButton.attr('alt', t('core', 'Dismiss'));
@@ -1184,6 +1185,7 @@ OC.Notification = {
 	 * @param {string} text Message to display
 	 * @param {Object} [options] options
 	 * @param {string} [options.type] notification type
+	 * @param {string} [options.hideCloseButton] hide close button
 	 * @param {int} [options.timeout=0] timeout value, defaults to 0 (permanent)
 	 * @return {jQuery} jQuery element for notification row
 	 */
