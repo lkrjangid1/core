@@ -686,6 +686,7 @@ td.avatar {
 	border-bottom: 1px solid #fdc7d1;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
+	text-align: left;
 }
 #notification .row:last-child {
 	border: none;
@@ -696,7 +697,7 @@ td.avatar {
 	vertical-align: middle;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: calc(50% - 7px);
 }
 #notification .row.closeable {
 	padding-right: 20px;
