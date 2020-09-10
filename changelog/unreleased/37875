@@ -4,5 +4,6 @@ Yellow notification center got redesigned:
 - Not blocking the top centered logo anymore
 - gets more attention using icons and red color
 - looks more modern
+- show close button as default option. Add option `hideCloseButton (bool)` to hide it if needed
 
 https://github.com/owncloud/core/pull/37875
