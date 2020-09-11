@@ -968,7 +968,7 @@ describe('Core base tests', function() {
 		it('shows close button for error types', function() {
 			var $row = OC.Notification.showTemporary('One');
 			var $rowError = OC.Notification.showTemporary('Two', {type: 'error'});
-			expect($row.find('.close').length).toEqual(0);
+			expect($row.find('.close').length).toEqual(1);
 			expect($rowError.find('.close').length).toEqual(1);
 
 			// after clicking, row is gone
